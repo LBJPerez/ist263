@@ -1,0 +1,14 @@
+body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+th, td {border: 1px solid black;}
+
+h1 {font-size: 2.5em;}
+h2 {font-size: 1.5em;}
+h1, h2 {color: crimson;}
+
+.evenrow {color: red;}
+.evenrow {background-color: aliceblue;}
+
+
+
+
