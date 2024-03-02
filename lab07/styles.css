@@ -1,0 +1,39 @@
+body {background-color: #E3FDFD;
+    }
+
+p, ol {color: #3F72AF;
+    }
+
+h1, h2 {color: #71C9CE;
+    }
+
+
+a {color: #F08A5D;
+    }
+
+
+table {border-collapse: collapse;
+    }
+
+
+th, td {border: 1px solid black;
+    }
+
+
+nav {background-color: #0C359E;
+    }
+
+nav a {color: #FFE6E6;
+    }
+
+nav a:hover {background-color: #8E7AB5;
+    }
+
+nav {padding: 10px;
+    margin: 30px;
+    text-align: center;
+    }
+
+
+
+ 
