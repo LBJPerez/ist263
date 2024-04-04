@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11</title>
+    <link rel="stylesheet" href="https://laferger.github.io/ist263/images/animate.css">
+
+    <style>
+        .first {
+    position: relative;
+    animation-name: first;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: 3;
+}
+@keyframes first {
+    0%   {left:0px; top:0px;}
+    33%  {left:200px; top:0px;}
+    67%  {left:200px; top:200px;}
+    100%  {left:0px; top:200px;}
+}
+.second {
+    position: relative;
+    animation-name: second;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: 3;
+}
+@keyframes second {
+    0%   {left:0px; top:0px;}
+    33%  {left:0px; top:200px;}
+    67%  {left:200px; top:200px;}
+    100%  {left:200px; top:0px;}
+}
+
+.third {
+    position: relative;
+    animation-name: third;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: 3;
+}
+@keyframes third {
+    0%   {left:0px; top:0px;}
+    33%  {left: -200px; top:0px;}
+    67%  {left: -200px; top:200px;}
+    100%  {left: 0px; top:200px;}
+}
+</style>
+
+
+    <script>
+        function WinnerMessage () {
+            alert('You Won!');
+        }
+
+        function TryAgain () {
+            alert('Wrong Shell - Try Again')
+        }
+
+
+    </script>
+
+</head>
+<body>
+    <h1>Choose a Walnut</h1>
+    <img src="https://laferger.github.io/ist263/images/walnut.png" alt="first walnut" class="first" onclick="WinnerMessage();">
+    <img src="https://laferger.github.io/ist263/images/walnut.png" alt="second walnut" class="second" onclick="TryAgain();">
+    <img src="https://laferger.github.io/ist263/images/walnut.png" alt="third walnut" class="third" onclick="TryAgain();">
+</body>
+</html>
