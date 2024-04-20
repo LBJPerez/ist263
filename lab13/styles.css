@@ -1,0 +1,157 @@
+body {background-color: #E3FDFD;
+    }
+
+p, ol {color: #3F72AF;
+    }
+
+h1, h2 {color: #71C9CE;
+    }
+
+
+a {color: #F08A5D;
+    }
+
+
+table {border-collapse: collapse;
+    }
+
+
+th, td {border: 1px solid black;
+    padding: 2px;
+    }
+
+caption {padding: 15px;
+    }
+
+nav {background-color: #0C359E;
+    }
+
+nav a {color: #FFE6E6;
+    }
+
+nav a:hover {background-color: #8E7AB5;
+    }
+
+nav {padding: 10px;
+    margin: -10px;
+    text-align: center;
+    }
+
+.heading {float: right;
+    margin: 200px;
+    padding: 50px;
+}
+
+.headimage {padding-top: 20px;
+    max-width: 100%;
+}
+
+
+.quote {float: right;
+    margin: 0px;
+    }
+
+.first {display: flex;
+        background-color: #ffffff;
+        border-radius: 3em;
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+}
+
+.second {display: flex;
+    margin-top: 50px;
+    background-color: #ffffff;
+    border-radius: 3em;
+    padding: 20px;
+    /*margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;*/
+    flex-wrap: wrap;
+
+    
+}
+
+.email{margin-left: 100px;
+}
+
+.form {display: flex;
+    /*margin-left: 50px;
+    margin-right: 50px;*/ 
+    padding-left: 40px; 
+}
+
+.location {display: flex;
+    order: 2;
+}
+
+
+
+
+
+.skillsh1 {font-size: 50px;
+    text-align: center;
+    margin: 40px;
+}
+
+.skillsp1 {text-align: center;
+}
+
+.img1, .img2, .img3, .img4, .img5 {width: 70px;
+}
+
+.skills {display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 40px;
+    padding-left: 350px;
+}
+
+
+aside {border-radius: 4em;
+    background-color: #FFE6E6;
+    padding: 20px;
+}
+
+.flexbox2 {display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.skip {
+    background-color: #FFE6E6;
+    padding: 8px;
+    border: 2px solid #000000;
+    text-decoration: none;
+    position: absolute;/* positions relative to top and bottom of viewport */
+    top: 10px;
+    left: -999px; /* push the botton off screen */
+}
+
+.skip:focus { /* when the button is tabbed to */
+    left: 10px; 
+}
+
+
+@media only screen and (max-width: 800px) {
+    nav {max-width: 150px;
+    }
+    nav a {max-width: 100%;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    span {display: none;
+    }
+    textarea {width: 300px;
+        height: 150px;
+    }
+}
+
+
+
+
+
+
+
