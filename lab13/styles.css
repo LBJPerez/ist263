@@ -4,11 +4,11 @@ body {background-color: #FFFFFF;
 p, ol {color: #405E7C;
     }
 
-h1, h2 {color: #5D9CA0;
+h1, h2 {color: #457c80;
     }
 
 
-a {color: #BF6B59;
+a {color: #bf634f;
     }
 
 
@@ -26,7 +26,7 @@ caption {padding: 15px;
 nav {background-color: #0A2E6B;
     }
 
-nav a {color: #FFFFFF;
+nav a {color: #dd7e7e;
     }
 
 nav a:hover {background-color: #9E8FB2;
@@ -52,7 +52,7 @@ nav {padding: 10px;
     }
 
 .first {display: flex;
-        background-color: #fbe8e8;
+        background-color: #d0afaf;
         border-radius: 3em;
         padding: 20px;
         margin-left: 50px;
@@ -61,7 +61,7 @@ nav {padding: 10px;
 
 .second {display: flex;
     margin-top: 50px;
-    background-color: #fbe8e8;
+    background-color: #d0a4a4;
     border-radius: 3em;
     padding: 20px;
     /*margin-top: 50px;
@@ -123,12 +123,12 @@ aside {border-radius: 4em;
     padding: 8px;
     border: 2px solid #000000;
     text-decoration: none;
-    position: absolute;/* positions relative to top and bottom of viewport */
+    position: absolute;
     top: 10px;
-    left: -999px; /* push the botton off screen */
+    left: -999px; 
 }
 
-.skip:focus { /* when the button is tabbed to */
+.skip:focus { 
     left: 10px; 
 }
 
