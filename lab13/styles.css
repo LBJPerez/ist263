@@ -1,14 +1,14 @@
 body {background-color: #FFFFFF;
     }
 
-p, ol {color: #3F72AF;
+p, ol {color: #405E7C;
     }
 
-h1, h2 {color: #71C9CE;
+h1, h2 {color: #5D9CA0;
     }
 
 
-a {color: #F08A5D;
+a {color: #BF6B59;
     }
 
 
@@ -16,20 +16,20 @@ table {border-collapse: collapse;
     }
 
 
-th, td {border: 1px solid black;
+th, td {border: 1px solid #333333;
     padding: 2px;
     }
 
 caption {padding: 15px;
     }
 
-nav {background-color: #0C359E;
+nav {background-color: #0A2E6B;
     }
 
-nav a {color: #FFE6E6;
+nav a {color: #FFFFFF;
     }
 
-nav a:hover {background-color: #8E7AB5;
+nav a:hover {background-color: #9E8FB2;
     }
 
 nav {padding: 10px;
@@ -52,7 +52,7 @@ nav {padding: 10px;
     }
 
 .first {display: flex;
-        background-color: #ffffff;
+        background-color: #fbe8e8;
         border-radius: 3em;
         padding: 20px;
         margin-left: 50px;
@@ -61,7 +61,7 @@ nav {padding: 10px;
 
 .second {display: flex;
     margin-top: 50px;
-    background-color: #ffffff;
+    background-color: #fbe8e8;
     border-radius: 3em;
     padding: 20px;
     /*margin-top: 50px;
@@ -111,7 +111,7 @@ nav {padding: 10px;
 
 
 aside {border-radius: 4em;
-    background-color: #FFE6E6;
+    background-color: #FFDFDF;
     padding: 20px;
 }
 
@@ -122,7 +122,7 @@ aside {border-radius: 4em;
 
 
 .skip {
-    background-color: #FFE6E6;
+    background-color: #FFDFDF;
     padding: 8px;
     border: 2px solid #000000;
     text-decoration: none;
