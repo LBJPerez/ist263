@@ -118,7 +118,6 @@ aside {border-radius: 4em;
     
 }
 
-
 .skip {
     background-color: #FFDFDF;
     padding: 8px;
@@ -132,7 +131,6 @@ aside {border-radius: 4em;
 .skip:focus { /* when the button is tabbed to */
     left: 10px; 
 }
-
 
 @media only screen and (max-width: 800px) {
     nav {max-width: 150px;
