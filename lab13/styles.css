@@ -23,13 +23,13 @@ th, td {border: 1px solid #333333;
 caption {padding: 15px;
     }
 
-nav {background-color: #0A2E6B;
+nav {background-color: #005A9C;
     }
 
-nav a {color: #dd7e7e;
+nav a {color: #FFFFFF;
     }
 
-nav a:hover {background-color: #9E8FB2;
+nav a:hover {background-color: #4E558F;
     }
 
 nav {padding: 10px;
@@ -73,6 +73,10 @@ nav {padding: 10px;
 .email{margin-left: 100px;
 }
 
+
+.email a {
+    color: #005A9C;
+}
 .sheet {display: flex;
     /*margin-left: 50px;
     margin-right: 50px;*/ 
