@@ -37,6 +37,10 @@ nav {padding: 10px;
     text-align: center;
     }
 
+.span {
+    color: #333333;
+}    
+
 .heading {float: right;
     margin: 200px;
     padding: 50px;
