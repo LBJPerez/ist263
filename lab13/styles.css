@@ -82,9 +82,9 @@ nav {padding: 10px;
     color: #090D10;
 }
 
-/*.address p, h2 {
+.address p, h2 {
     color: #090D10;
-}*/
+}
 
 .sheet input {
     color: #131E25;
@@ -96,6 +96,9 @@ nav {padding: 10px;
     
 }
 
+.sheet p {
+    color: #090D10;
+}
 
 .location {display: flex;
     order: 2;
