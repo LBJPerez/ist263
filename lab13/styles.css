@@ -1,10 +1,10 @@
 body {background-color: #FFFFFF;
     }
 
-p, ol {color: #333333;
+p, ol {color: #405E7C;
     }
 
-h1, h2 {color: #345B6C;
+h1, h2 {color: #457c80;
     }
 
 
@@ -82,9 +82,9 @@ nav {padding: 10px;
     color: #090D10;
 }
 
-.address p, h2 {
+/*.address p, h2 {
     color: #090D10;
-}
+}*/
 
 .sheet input {
     color: #131E25;
