@@ -1,16 +1,18 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #1ca6eb;
     margin: 0;
-    padding: 0;
 }
 
 nav {
     text-align: center;
     background-color: #0C359E;
-    padding: 10px;
+    padding: 5px;
     margin: -10px;
 }
+
 
 nav a {
     color: #ffe6e6;
@@ -23,7 +25,6 @@ nav span {
 
 .intro {
     color: #ffe6e6; 
-    text-align: center;
     padding-top: 10px;
 }
 
@@ -81,6 +82,10 @@ nav span {
 
     .genre p {
         font-size: 1em;
+    }
+
+    .intro {
+        max-width: 100%;
     }
 }
 
