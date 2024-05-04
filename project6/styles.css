@@ -1,0 +1,223 @@
+html, body {
+    font-family: 'PT Serif', serif;
+    background-color: #fff; 
+    color: #333333; 
+    line-height: 1.6; 
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
+nav {
+    width: 100%; 
+    background-color: #0C359E; 
+    padding: 10px 0; 
+    margin: 0; 
+    display: block; 
+    text-align: center; 
+}
+
+nav a {
+    color: #FFE6E6; 
+    text-decoration: none; 
+    padding: 0 15px; 
+}
+
+nav a:hover {
+    background-color: #8E7AB5;
+}
+
+.intro {
+    margin-top: 0; 
+}
+
+nav span {
+    color: #FFE6E6;
+}
+
+.intro p {
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 5px;
+}
+
+
+.genres-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    padding: 20px; 
+}
+
+.genre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 10px;
+    padding: 40px; 
+    background-color: #726883;
+    color: #ffffff;
+    box-sizing: border-box;
+    flex: 1;
+    min-width: calc(50% - 20px); 
+}
+
+.genre h2 {
+    margin: 0 0 10px 0; 
+}
+
+.genre p {
+    text-align: center; 
+    margin: 0; 
+}
+
+h1 {
+    text-align: center; 
+    color: #222222; 
+    margin: 20px 0; 
+}
+
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #FFE6E6;
+}
+/*---------------------------Artists Page-----------------------------------*/
+
+.artist-section div h2 {
+    text-align: center; 
+    margin-top: 0; 
+    margin-bottom: 20px; 
+    font-size: 24px; 
+    color: #FFFFFF; 
+    padding: 10px 0; 
+    width: 100%;
+}
+
+.artist-image {
+    width: 10%;  
+    height: 150px;
+    object-fit: cover; 
+    border-radius: 5px; 
+    margin-right: 20px; 
+}
+
+
+.artist-section {
+    display: flex;
+    align-items: center; 
+    background-color: #726883;
+    color: #FFFFFF; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 6px #00000033;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.artist-section div {
+    flex-grow: 1; 
+}
+
+
+
+
+/*----------------------Songs Page----------------------------------------*/
+
+.songs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 20px;
+    gap: 20px;
+}
+
+.song-genre {
+    background-color: #726883;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px #00000033;
+    flex: 1 1 45%; 
+    margin-bottom: 20px;
+}
+
+.song-genre h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.song-genre div {
+    margin-bottom: 10px;
+}
+
+.song-genre h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.song-genre p {
+    margin-left: 20px;
+}
+
+/*----------------------Skip Button----------------------------------------*/
+
+.skip {
+    background-color: #726883;
+    padding: 8px;
+    border: 2px solid #000000;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: -999px; 
+}
+
+.skip:focus { 
+    left: 10px; 
+}
+
+
+
+@media (max-width: 768px) {
+    .genre {
+        min-width: 100%; 
+        padding: 30px;
+    }
+
+    .genre h2 {
+        font-size: 1.5em; 
+    }
+
+    .genre p {
+        font-size: 1em;
+    }
+
+    .intro {
+        max-width: 100%;
+    }
+
+
+    .artist-section {
+        flex-direction: column; 
+        text-align: center; 
+        align-items: center;
+    }
+
+    .artist-image {
+        width: 50%;  
+        height: auto; 
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+
+}
+
+
