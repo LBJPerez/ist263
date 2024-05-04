@@ -167,6 +167,14 @@ a:hover {
     margin-left: 20px;
 }
 
+
+.spotify-iframe {
+    width: 100%;
+    border-radius: 12px;
+    border: none; 
+}
+
+
 /*----------------------Skip Button----------------------------------------*/
 
 .skip {
@@ -183,12 +191,6 @@ a:hover {
     left: 10px; 
 }
 
-
-.spotify-iframe {
-    width: 100%;
-    border-radius: 12px;
-    border: none; /* This is to handle the frameborder attribute error */
-}
 
 
 
