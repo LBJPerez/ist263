@@ -115,7 +115,7 @@ a:hover {
     background-color: #726883;
     color: #FFFFFF; 
     padding: 20px;
-    margin-bottom: 20px; 
+    margin-bottom: 30px; 
     border-radius: 10px; 
     box-shadow: 0 2px 6px #00000033;
     margin-right: 20px;
@@ -183,7 +183,14 @@ a:hover {
     left: 10px; 
 }
 
-/*---------------------------------------------*/
+
+.spotify-iframe {
+    width: 100%;
+    border-radius: 12px;
+    border: none; /* This is to handle the frameborder attribute error */
+}
+
+
 
 
 @media (max-width: 780px) {
