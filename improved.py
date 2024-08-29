@@ -7,7 +7,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 
 app = Flask(__name__)
 
-client_credentials_manager = SpotifyClientCredentials(client_id='3983eacffb104766ab7c877180c2d32c', client_secret='bd526b40db8d48c78d7e8690fe5f498c')
+client_credentials_manager = SpotifyClientCredentials(client_id='Add Spotify Client Key Here', client_secret='Add Spotify Secret Key Here')
 spotify = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 @app.route("/", methods=["GET", "POST"])
@@ -17,7 +17,7 @@ def home():
         lyrics = request.form["lyrics"]
 
         headers = {
-            "Authorization": "Bearer cDdPbXXAzg-rpuNuJ_YYwoRsGBB66OjQr8CsokDYtuXQTOjXOcmbOWdM6_PmfWsv"
+            "Authorization": "Add Genius Key Here"
         }
         params = {
             "q": lyrics
