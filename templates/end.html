@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Song Finder</title>
+   <style>
+
+    table {
+  border-collapse: collapse;
+    }
+
+   th, td {border: 1px solid black;}
+
+    body {
+  background-color: #1ca6eb;
+    }
+
+     body {
+       font-family: Arial, sans-serif;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: flex-start;
+       height: 100vh;
+       margin: 0;
+       padding-top: 5%;
+     }
+
+     h1 {
+       font-size: 3em;
+       margin-bottom: 50px;
+     }
+
+     .search-container {
+       display: flex;
+       width: 70%;
+
+     }
+
+     .search-container form {
+       width: 100%;
+     }
+
+     input[type="text"] {
+       flex-grow: 1;
+       padding: 10px;
+       font-size: 16px;
+       border: 2px solid #ccc;
+       border-top-left-radius: 5px;
+       border-bottom-left-radius: 5px;
+       border-right: none;
+     }
+
+     input[type="submit"] {
+       padding: 10px 20px;
+       background-color: #4CAF50;
+       color: white;
+       border: 2px solid #4CAF50;
+       border-top-right-radius: 5px;
+       border-bottom-right-radius: 5px;
+       cursor: pointer;
+     }
+
+     input[type="submit"]:hover {
+       background-color: #45a049;
+     }
+   </style>
+</head>
+<body>
+
+   <h1>Song Finder</h1>
+   <div class="search-container">
+      <form method="POST" action="/" style="display: flex; width: 100%;">
+         <input type="text" name="lyrics" placeholder="Enter lyrics here..." style="flex-grow: 1;">
+         <input type="submit" value="Search">
+      </form>
+   </div>
+
+   {% if message %}
+    <h2>{{ message }}</h2>
+    {% endif %}
+
+    {% if songs %}
+
+    <table>
+        <tr>
+            <th>Song Title</th>
+            <th>Artist</th>
+            <th>Preview</th>
+        </tr>
+        {% for song in songs %}
+        <tr>
+            <td><a href="#" class="song-title" data-preview="{{ song['preview_url'] }}">{{ song['name'] }}</a></td>
+            <td>{{ song['artist'] }}</td>
+            <td>
+                <button class="play-preview">Play</button>
+                <button class="pause-preview" style="display:none">Pause</button>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {% endif %}
+   <script>
+        const songTitles = document.querySelectorAll('.song-title');
+        const playButtons = document.querySelectorAll('.play-preview');
+        const pauseButtons = document.querySelectorAll('.pause-preview');
+
+        for(let i=0; i<songTitles.length; i++){
+            const songTitle = songTitles[i];
+            const playButton = playButtons[i];
+            const pauseButton = pauseButtons[i];
+            const previewUrl = songTitle.dataset.preview;
+            let audio;
+
+            playButton.addEventListener('click', function(){
+                if (audio && !audio.paused) {
+                    audio.pause();
+                    pauseButton.style.display = "none";
+                    playButton.style.display = "block";
+                } else {
+                    if (audio) {
+                        audio.play();
+                    } else {
+                        audio = new Audio(previewUrl);
+                        audio.play();
+                    }
+                    playButton.style.display = "none";
+                    pauseButton.style.display = "block";
+                }
+            });
+
+            pauseButton.addEventListener('click', function() {
+                audio.pause();
+                pauseButton.style.display = "none";
+                playButton.style.display = "block";
+            });
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
